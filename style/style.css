@@ -271,6 +271,46 @@ ul li{
     height: 15px;
 }
 
+
+/* ----------------------------------------------------------------- */
+/* -----------------------Contact------------------------------------ */
+/* ------------------------------------------------------------------ */
+.service-container{
+    margin: 50px 0;
+   
+    display: grid;
+    grid-template-columns: auto auto auto;
+    
+}
+.service-card{
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    width: 280px;
+    align-items: center;
+    font-size: 19px;
+    padding: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 10px;
+}
+
+.service-text{
+    opacity: .6;
+}
+.service-logo{
+    width: 150px;
+    height: 150px ;
+    
+    margin: 20px;
+}
+.header-text-s{
+    font-size: 25px;
+    font-weight: bold;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding: 10px 0;
+}
+
+
 /* ----------------------------------------------------------------- */
 /* -----------------------Contact------------------------------------ */
 /* ------------------------------------------------------------------ */
