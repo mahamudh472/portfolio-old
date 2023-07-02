@@ -33,9 +33,7 @@ body {
     color: rgb(70, 69, 69);
 
 }
-.div-gap {
-    height: 300px;
-}
+
 
 .gap {
     height: 100px;
@@ -92,22 +90,33 @@ hr{
     font-size: 14px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     color: black;
+    border: none;
+    background-color: inherit;
+    cursor: pointer;
+
 }
 
 /* ------------------------------------------------------------- */
 /* ------------------- Home Page ------------------------------- */
 /* -------------------------------------------------------------- */
-
+*{}
 .portfolio-card {
     width: 100%;
-    min-height: 550px;
     background-color: #fff;
+    padding-bottom: 20px;
     border-radius: 10px;
     overflow: hidden;
     position: relative;
     box-shadow: 8px 10px 5px 0 rgb(206, 206, 206);
+    opacity: 0;
+    height: 0;
+    transition: opacity .5s ease, height 0.1s ease;
 }
 
+.portfolio-card.active-card{
+    opacity: 1;
+    height: auto;
+}
 .portfolio-card-top {
     background-image: url('card background.jpg');
     height: 300px;
@@ -314,9 +323,9 @@ ul li{
 /* ----------------------------------------------------------------- */
 /* -----------------------Contact------------------------------------ */
 /* ------------------------------------------------------------------ */
-.contact {
-    height: 650px;
-}
+/* .contact {
+    height: ;
+} */
 
 .contact-container {
     margin-top: 75px;

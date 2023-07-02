@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=1250px, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mahmud Hasan</title>
     <link rel="stylesheet" href="style/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
@@ -17,14 +17,14 @@
                 Mahmud <span class="green-text"> Hasan </span>
             </div>
             <div class="h-right">
-                <a href="#" class="links">Home</a>
-                <a href="#resume" class="links">Resume</a>
-                <a href="#services" class="links">Services</a>
-                <a href="#portfolio" class="links">Portfolio</a>
-                <a href="#contact" class="links">Contact</a>
+                <button href="" onclick="slide('index')" class="links">Home</button>
+                <button href="" onclick="slide('resume')" class="links">Resume</button>
+                <button href="" onclick="slide('service')" class="links">Services</button>
+                <button href="" onclick="slide('portfolio')" class="links">Portfolio</button>
+                <button href="" onclick="slide('contact')" class="links">Contact</button>
             </div>
         </div>
-        <div class="portfolio-card">
+        <div class="portfolio-card active-card" id="index">
             <img src="style/profile_photo.jpeg" alt="" class="profile-img">
             <div class="portfolio-card-top">
                 <div class="name-area">
@@ -88,9 +88,8 @@
 
 
         </div>
-        <div class="div-gap"></div>
-        <div class="gap" id="resume"></div>
-        <div class="portfolio-card resume">
+
+        <div class="portfolio-card resume" id="resume">
             <div class="div-header">
                 Resume
             </div>
@@ -236,14 +235,13 @@
                         </div>
 
                     </div>
-                    <div class="mini-gap"></div>
+
                     <div class="resume-header-text">
                         PROBLEM SOLVING SKILL
                     </div>
                     <div class="sub-header">
                         Solved many problems in programming contests and various online judge platforms.
                     </div>
-                    <div class="mini-gap"></div>
                     <div class="blue-text">
                         Platforms number of solved
                     </div>
@@ -284,7 +282,6 @@
                         <i class="fa fa-calendar-days"></i>
                         Feb 2023 - Present Running
                     </div>
-                    <div class="mini-gap"></div>
                     <div class="resume-header-text">
                         ACHIVEMENTS
                     </div>
@@ -299,7 +296,6 @@
                             1045 Contest rating At CodeChef
                         </li>
                     </ul>
-                    <div class="mini-gap"></div>
                     <div class="resume-header-text">
                         CERTIFICATIONS
                     </div>
@@ -342,7 +338,6 @@
                     <div class="pink-text">
                         District Top
                     </div>
-                    <div class="mini-gap"></div>
                     <div class="resume-header-text">
                         LANGUAGES
                     </div>
@@ -355,7 +350,6 @@
                         </li>
                     </ul>
                     Professional Working Proficiency
-                    <div class="mini-gap"></div>
                     <div class="resume-header-text">
                         Intersts
                     </div>
@@ -386,9 +380,8 @@
 
             </div>
         </div>
-        <div class="div-gap"></div>
-        <div class="gap" id="services"></div>
-        <div class="portfolio-card resume">
+
+        <div class="portfolio-card resume" id="service">
             <div class="div-header">
                 Services
             </div>
@@ -399,34 +392,38 @@
                         Full website creation
                     </div>
                     <div class="service-text">
-                        I do create any type of website for your business, portfolio, company, e-commerce store, blog etc.Ensure unique, clean & awesome graphical design interface.
+                        I do create any type of website for your business, portfolio, company, e-commerce store, blog
+                        etc.Ensure unique, clean & awesome graphical design interface.
                     </div>
                 </div>
                 <div class="service-card">
-                    <img src="https://cdn.pixabay.com/photo/2016/10/10/14/46/icon-1728552__480.jpg" class="service-logo " alt="">
+                    <img src="https://cdn.pixabay.com/photo/2016/10/10/14/46/icon-1728552__480.jpg"
+                        class="service-logo " alt="">
                     <div class="header-text-s">
                         E-commerce website
                     </div>
                     <div class="service-text">
-                        I do create a fully functional online store with any type of payment gateway support and add shoping cart functionality into you're existing website.
+                        I do create a fully functional online store with any type of payment gateway support and add
+                        shoping cart functionality into you're existing website.
                     </div>
                 </div>
                 <div class="service-card">
-                    <img src="https://thumbs.dreamstime.com/b/handshake-icon-vector-symbol-illustration-logo-151876959.jpg" class="service-logo " alt="">
+                    <img src="https://thumbs.dreamstime.com/b/handshake-icon-vector-symbol-illustration-logo-151876959.jpg"
+                        class="service-logo " alt="">
                     <div class="header-text-s">
                         24/7 Dedicated Support
                     </div>
                     <div class="service-text">
-                        24/7 support means a support service that is provided 24 hours a day and 7 days a week. Clients statisfaction is the first & foremost responsibility.
+                        24/7 support means a support service that is provided 24 hours a day and 7 days a week. Clients
+                        statisfaction is the first & foremost responsibility.
                     </div>
                 </div>
-                
-                
+
+
             </div>
         </div>
-        <div class="div-gap"></div>
-        <div class="gap" id="portfolio"></div>
-        <div class="portfolio-card resume">
+
+        <div class="portfolio-card resume" id="portfolio">
             <div class="div-header">
                 Portfolio
             </div>
@@ -435,9 +432,7 @@
             </div>
         </div>
 
-        <div class="div-gap"></div>
-        <div class="gap" id="contact"></div>
-        <div class="portfolio-card contact">
+        <div class="portfolio-card contact" id="contact">
             <div class="div-header">
                 Contact
             </div>
@@ -504,7 +499,7 @@
                 </div>
             </div>
         </div>
-        <div class="div-gap"></div>
+
     </div>
 
 </body>
