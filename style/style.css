@@ -176,6 +176,7 @@ hr{
     }
     .profile-img{
         height: 200px !important;
+        left:10px !important;
     }
     .portfolio-header{
         padding: 10px;
@@ -195,7 +196,26 @@ hr{
         padding-top: 10px !important;
         margin-bottom: 0 !important;
     }
-    
+    .resume-left, .resume-right, .bottom-left{
+        width: 100% !important;
+    }
+    .name-area{
+        margin: 0;
+        margin-left: 0;
+    }
+    .portfolio-card-top{
+        display: flex;
+        justify-content: flex-end   ;
+    }
+    .h-left{
+        font-size: 30px;
+    }
+}
+@media screen and (max-width:1000px) {
+    .title{
+        font-size: 15px;
+    }
+
 }
 
 .portfolio-card.active-card{
