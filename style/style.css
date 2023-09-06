@@ -502,3 +502,147 @@ textarea {
     opacity: 1;
     cursor: pointer;
 }
+
+
+/* ----------------------------------------------------------------- */
+/* -----------------------Portfolio------------------------------------ */
+/* ------------------------------------------------------------------ */
+
+
+.project-container{
+    display: grid;
+    width: 100%;
+    grid-template-columns: auto auto auto;
+    gap: auto;
+    row-gap: 30px;
+    margin: 20px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+
+}
+
+.card-box{
+    width: 290px;
+    min-height: 440px;
+    display: flex;
+    border-radius: 20px;
+    background: #000000;
+
+}
+.card-full{
+    display: flex;
+    flex-direction: column;
+    box-shadow: 1px 1px 5px 0px #000;
+}
+.card-img{
+    width: 100%;
+    height: 200px;
+    border-radius: 20px 20px 0px 0px;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+
+}
+.card-img img{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px 20px 0px 0px;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+
+}
+ 
+.card-content{
+    padding: 8px;
+    text-overflow: wrap;
+}
+.card-content h3{
+    font-size: 21px;
+    line-height: 34px;
+    font-weight: 500;
+    color: #fff;
+    margin-top: 10px;
+    margin-left: 15px;
+    letter-spacing: 1.4px;
+    font-family: sans-serif;
+}
+.card-content p{
+    font-size: 15px;
+    line-height: 19px;
+    font-weight: 300;
+    color: #fff;
+    padding: 5px 0px 5px 15px;
+    word-spacing: 2px;
+    font-family: sans-serif;
+}
+.language-btn{
+    width: 330px;
+    height: 100px;
+    margin-top: 8px;
+    margin-left: 15px;
+}
+.language-col-2{
+    margin-top: 12px;
+}
+.react,
+.open-map,
+.python,
+.django,
+.api,
+.postgresql{
+   
+   
+    padding: 2px 10px;
+    text-align: center;
+    border-radius: 15px;
+    color: #fff;
+    border: 1px solid lightseagreen;
+}
+
+.open-map{
+    border: 1px solid rgb(138, 44, 75);
+}
+.python{
+    border: 1px solid khaki;
+}
+.django{
+    border: 1px solid rgb(89, 236, 89);
+}
+.api{
+    border: 1px solid rgb(151, 151, 7);
+}
+.postgresql{
+    border: 1px solid rgb(7, 22, 7);
+}
+
+.live-demo{
+    padding-top: 15px;
+}
+ 
+.live-demo a{
+    border-bottom: 2px solid rgb(151, 151, 7);
+    font-size: 16px;
+    font-weight: 500;
+    font-family: sans-serif;
+    color: white;
+    letter-spacing: 0.4px;
+    word-spacing: 3px;
+}
+.live-demo a:hover{
+border-bottom: none;
+}
+ 
+.col a{
+    font-size: 14px;
+    font-weight: normal;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+@media screen and (max-width:1000px){
+    .project-container{
+        grid-template-columns: auto auto;
+        gap: auto;
+    }
+
+}
+    
